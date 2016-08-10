@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="G2n-Hv-0IJ">
+                        <rect key="frame" x="8" y="4" width="123" height="92"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="123" id="d9J-W4-222"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vu3-Q2-gi3">
+                        <rect key="frame" x="151" y="37" width="48" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="点击浏览"/>
+                        <connections>
+                            <action selector="openImageViewEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bVF-P3-vHV"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIImageView图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHz-mq-1Oh">
+                        <rect key="frame" x="139" y="4" width="119" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="G2n-Hv-0IJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="CuG-kA-clI"/>
+                    <constraint firstItem="dHz-mq-1Oh" firstAttribute="leading" secondItem="G2n-Hv-0IJ" secondAttribute="trailing" constant="8" id="Ngc-lZ-v3p"/>
+                    <constraint firstItem="Vu3-Q2-gi3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aHc-z7-idk"/>
+                    <constraint firstItem="dHz-mq-1Oh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="cCJ-6w-ot7"/>
+                    <constraint firstItem="Vu3-Q2-gi3" firstAttribute="leading" secondItem="G2n-Hv-0IJ" secondAttribute="trailing" constant="20" id="ddz-pQ-Ygq"/>
+                    <constraint firstItem="G2n-Hv-0IJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lYO-MI-hUb"/>
+                    <constraint firstAttribute="trailing" secondItem="Vu3-Q2-gi3" secondAttribute="trailing" id="mKW-VN-Q0l"/>
+                    <constraint firstAttribute="bottom" secondItem="G2n-Hv-0IJ" secondAttribute="bottom" constant="4" id="zTD-7J-qDb"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="mKW-VN-Q0l"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="customeImageView" destination="G2n-Hv-0IJ" id="oEv-kE-zoI"/>
+            </connections>
+            <point key="canvasLocation" x="236" y="310"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yGW-Sa-Ml5" customClass="CustomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yGW-Sa-Ml5" id="ZDy-vH-NGc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDL-8y-en9">
+                        <rect key="frame" x="12" y="9" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="2Sn-zd-glf"/>
+                            <constraint firstAttribute="height" constant="80" id="hnF-12-lPf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <state key="normal" title="点击浏览" backgroundImage="img02.jpg">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="openButtonBackgroundImageEvent:" destination="yGW-Sa-Ml5" eventType="touchUpInside" id="kU7-Qr-czD"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIButtonBackgroudImage图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grN-pK-AnG">
+                        <rect key="frame" x="101" y="9" width="207" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PDL-8y-en9" secondAttribute="trailing" id="Ctn-oB-apA"/>
+                    <constraint firstItem="grN-pK-AnG" firstAttribute="top" secondItem="ZDy-vH-NGc" secondAttribute="top" constant="9" id="GKw-Ra-jeA"/>
+                    <constraint firstItem="PDL-8y-en9" firstAttribute="centerY" secondItem="ZDy-vH-NGc" secondAttribute="centerY" id="Kvf-gv-zz0"/>
+                    <constraint firstItem="grN-pK-AnG" firstAttribute="leading" secondItem="PDL-8y-en9" secondAttribute="trailing" constant="9" id="nuA-B6-sBg"/>
+                    <constraint firstItem="PDL-8y-en9" firstAttribute="leading" secondItem="ZDy-vH-NGc" secondAttribute="leading" constant="12" id="pVo-Kf-Hnv"/>
+                    <constraint firstItem="PDL-8y-en9" firstAttribute="centerX" secondItem="ZDy-vH-NGc" secondAttribute="centerX" id="wmr-gb-bwB"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Ctn-oB-apA"/>
+                        <exclude reference="wmr-gb-bwB"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="236" y="485"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="sAW-Wq-lAk" customClass="CustomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sAW-Wq-lAk" id="0rM-JM-7dq">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knt-Yn-h0T">
+                        <rect key="frame" x="12" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="4Fj-Hi-ixA"/>
+                            <constraint firstAttribute="width" constant="80" id="POI-hc-4YJ"/>
+                        </constraints>
+                        <state key="normal" image="img02.jpg">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="openButtonImageEvent:" destination="sAW-Wq-lAk" eventType="touchUpInside" id="1Jf-RT-LBE"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIButtonImage图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwu-C2-UaY">
+                        <rect key="frame" x="101" y="9" width="132" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Knt-Yn-h0T" firstAttribute="leading" secondItem="0rM-JM-7dq" secondAttribute="leading" constant="12" id="31M-GJ-8Nh"/>
+                    <constraint firstItem="Dwu-C2-UaY" firstAttribute="top" secondItem="0rM-JM-7dq" secondAttribute="top" constant="9" id="Aaw-Ra-rez"/>
+                    <constraint firstItem="Dwu-C2-UaY" firstAttribute="leading" secondItem="Knt-Yn-h0T" secondAttribute="trailing" constant="9" id="GzM-16-MGJ"/>
+                    <constraint firstItem="Knt-Yn-h0T" firstAttribute="centerX" secondItem="0rM-JM-7dq" secondAttribute="centerX" id="PGB-Ld-4L6"/>
+                    <constraint firstItem="Knt-Yn-h0T" firstAttribute="centerY" secondItem="0rM-JM-7dq" secondAttribute="centerY" id="Zjf-2e-Ecc"/>
+                    <constraint firstAttribute="trailing" secondItem="Knt-Yn-h0T" secondAttribute="trailing" id="bAj-fj-GPq"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="PGB-Ld-4L6"/>
+                        <exclude reference="bAj-fj-GPq"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="236" y="668"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img01.jpg" width="720" height="480"/>
+        <image name="img02.jpg" width="800" height="533"/>
+    </resources>
+</document>
